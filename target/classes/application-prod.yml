@@ -1,0 +1,15 @@
+
+server:
+  port: 8082
+
+spring:
+ 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.77.254.85:3306/buddy?useUnicode=true&characterEncoding=utf8
+    username: buddy1
+    password: Buddy@123
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true

@@ -1,0 +1,23 @@
+#服务配置
+server:
+  port: 8081
+
+flowable:  async-executor-activate: false
+  database-schema-update: true
+
+
+#spring配置
+spring:
+ 
+  #2.数据库连接池
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/flowableTest?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: admin
+ 
+  #3.JPA
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
